@@ -7,7 +7,7 @@
 - Express
 - MongoDB(optional)
 
-## Plus
+## Linting & Formatter
 
 - ESLint
 - Prettier
