@@ -1,6 +1,6 @@
 # Quick start backend project
 
-## Tecnologies
+## Technologies
 
 - Node
 - TypeScript
@@ -12,14 +12,20 @@
 - ESLint
 - Prettier
 
-## Install Dependencies
+## How To Use
+
+To clone and run this application, you'll need Git and Node.js (which comes with yarn) installed on your computer. From your command line:
 
 ```bash
-yarn install
-```
+# Clone this repository
+$ git clone https://github.com/kevin-sg/start_backend_node_ts_express.git
 
-## Start Production
+# Install dependencies
+$ yarn install
 
-```bash
-yarn dev
+# Run the app
+$ yarn start
+
+# Run mode dev
+$ yarn dev
 ```
