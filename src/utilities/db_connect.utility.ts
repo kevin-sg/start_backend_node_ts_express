@@ -15,8 +15,10 @@ const option = {
 export async function connectToDatabase(): Promise<Mongoose | void> {
   try {
     await mongoose.connect(MONGODB_URI, option);
-    // eslint-disable-next-line no-console
-    console.log("Connented to MongoDB");
+    mongoose.connection.once("connection", () => {
+      // eslint-disable-next-line no-console
+      console.log("Connented to MongoDB");
+    });
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(err);
